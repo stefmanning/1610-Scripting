@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 99494096}
   - component: {fileID: 99494095}
   - component: {fileID: 99494094}
+  - component: {fileID: 99494099}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -224,6 +225,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &99494099
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99494093}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &782406121
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +253,7 @@ GameObject:
   - component: {fileID: 782406124}
   - component: {fileID: 782406123}
   - component: {fileID: 782406122}
+  - component: {fileID: 782406126}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -316,6 +334,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &782406126
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782406121}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &860723998
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +628,7 @@ GameObject:
   - component: {fileID: 1621992865}
   - component: {fileID: 1621992864}
   - component: {fileID: 1621992863}
+  - component: {fileID: 1621992867}
   m_Layer: 0
   m_Name: Obstacle 2
   m_TagString: Untagged
@@ -673,3 +708,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1621992867
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621992862}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
