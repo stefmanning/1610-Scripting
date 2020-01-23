@@ -13,7 +13,7 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        transform.Translate(0, 0, 1);
+        transform.Translate(0, 0, .5f);
     }
  
     //Detect collision with another object
