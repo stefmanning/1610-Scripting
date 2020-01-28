@@ -14,14 +14,33 @@ public class Move : MonoBehaviour
     public void Update()
     {
         transform.Translate(0, 0, .5f);
+        // (x, y, x)
     }
- 
-    //Detect collision with another object
-           public void OnCollisionEnter(Collision other) { 
- 
-    }
-    void OnTriggerEnter(Collider other){
 
+    //Detect collision with another object
+      void OnCollisionEnter(Collision other) {
+
+        if (other.gameObject.CompareTag("floor")) //primary
+        {
+            Debug.Log("Colliding with floor");
+        }
+
+        else if (other.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("colliding with Obstacle"); //secondary
+        }
+        else //Default
+        {
+            Debug.Log("...");
+        }
+        
+    }
+        
+
+
+    void OnTriggerEnter(Collider other)
+{
+    Debug.Log("you have entered the trigger!");
 }
 
 }
