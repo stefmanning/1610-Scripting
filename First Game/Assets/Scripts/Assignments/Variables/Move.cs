@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+
+    public float speed;
+    public float turnSpeed;
+    public float verticalInput;
+    public float horizontalInput;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
-        transform.Translate(0, 0, .5f);
+        verticalInput = Input.GetAxis("Vertical"); //GetKey(KeyCode "Space") y axis
+        horizontalInput = Input.GetAxis("Horizontal"); //left and right
+
+        transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
+        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
         // (x, y, x)
     }
+}
 
     //Detect collision with another object
-      void OnCollisionEnter(Collision other) {
+      /* void OnCollisionEnter(Collision other) {
 
         if (other.gameObject.CompareTag("floor")) //primary
         {
@@ -43,4 +55,4 @@ public class Move : MonoBehaviour
     Debug.Log("you have entered the trigger!");
 }
 
-}
+} */
