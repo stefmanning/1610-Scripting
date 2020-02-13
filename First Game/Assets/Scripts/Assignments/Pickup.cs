@@ -20,6 +20,7 @@ public class Pickup : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.CompareTag("Player"))
         {
         ScoreManager.AddPoints(pointsToAdd);
