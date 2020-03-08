@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NumberWizard : MonoBehaviour
-{
+public class NumberWizard : MonoBehaviour { 
+
+    int max = 1000;
+    int min = 1;
+    int guess = 500;
+
     // Start is called before the first frame update
     void Start()
     {
-        int max = 1000;
-        int min = 1;
-
+    
 
         Debug.Log("Welcome to number Wizard!");
         Debug.Log("Pick a number, don't be shy");
@@ -24,11 +26,15 @@ public class NumberWizard : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("Up Arrow key was pressed."); 
+            Debug.Log("Up Arrow key was pressed.");
+            min = guess;
+            Debug.Log(guess);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Debug.Log("Down Arrow key was pressed.");
+            max = guess;
+            Debug.Log(guess);
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
