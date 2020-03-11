@@ -5,17 +5,16 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public int currentHealth;
-    public const maxHealth = 3;
+    //public const maxHealth = 3;
     public Transform spawnPoint;
     public int points;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        //currentHealth = maxHealth;
     }
 
-    {
     // Update is called once per frame
     public void TakeDamage(int amount)
     {
@@ -31,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
             transform.position = spawnPoint.position;
             transform.rotation = spawnPoint.rotation;
             //reset enemy Health
-            currentHealth = maxHealth;
+       
 
         }
     }
